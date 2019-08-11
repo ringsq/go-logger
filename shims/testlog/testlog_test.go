@@ -1,7 +1,7 @@
 package testlog
 
 import (
-	"github.com/InVisionApp/go-logger"
+	"github.com/rantav/go-logger"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

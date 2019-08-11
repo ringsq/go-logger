@@ -1,4 +1,4 @@
-module github.com/InVisionApp/go-logger
+module github.com/rantav/go-logger
 
 go 1.12
 
