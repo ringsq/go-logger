@@ -3,7 +3,7 @@ package logrus
 import (
 	"bytes"
 
-	"github.com/InVisionApp/go-logger"
+	"github.com/rantav/go-logger"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/sirupsen/logrus"
