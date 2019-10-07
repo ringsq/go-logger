@@ -1,7 +1,7 @@
 package testlog
 
 import (
-	"github.com/rantav/go-logger"
+	"github.com/appsflyer/go-logger"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

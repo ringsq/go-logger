@@ -1,4 +1,4 @@
-module github.com/rantav/go-logger
+module github.com/appsflyer/go-logger
 
 go 1.12
 

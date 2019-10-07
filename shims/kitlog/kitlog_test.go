@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/rantav/go-logger"
+	"github.com/appsflyer/go-logger"
 	kitlog "github.com/go-kit/kit/log"
 
 	. "github.com/onsi/ginkgo"

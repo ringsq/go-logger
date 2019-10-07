@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	log "github.com/rantav/go-logger"
+	log "github.com/appsflyer/go-logger"
 )
 
 // TestLogger is used to capture logs during the execution of a test.

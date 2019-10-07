@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	log "github.com/rantav/go-logger"
+	log "github.com/appsflyer/go-logger"
 	"github.com/rs/zerolog"
 )
 
