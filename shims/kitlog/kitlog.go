@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	log "github.com/appsflyer/go-logger"
+	log "github.com/AppsFlyer/go-logger"
 	kitlog "github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/log/level"
 )

@@ -4,7 +4,7 @@ package fake
 import (
 	"sync"
 
-	log "github.com/appsflyer/go-logger"
+	log "github.com/AppsFlyer/go-logger"
 )
 
 type FakeLogger struct {

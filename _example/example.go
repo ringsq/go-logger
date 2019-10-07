@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/appsflyer/go-logger"
-	"github.com/appsflyer/go-logger/shims/_fake"
-	"github.com/appsflyer/go-logger/shims/logrus"
-	"github.com/appsflyer/go-logger/shims/testlog"
+	"github.com/AppsFlyer/go-logger"
+	"github.com/AppsFlyer/go-logger/shims/_fake"
+	"github.com/AppsFlyer/go-logger/shims/logrus"
+	"github.com/AppsFlyer/go-logger/shims/testlog"
 )
 
 func main() {

@@ -1,4 +1,4 @@
-module github.com/appsflyer/go-logger
+module github.com/AppsFlyer/go-logger
 
 go 1.12
 
