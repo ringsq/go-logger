@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/AppsFlyer/go-logger"
+	"github.com/magna5/go-logger"
 	kitlog "github.com/go-kit/kit/log"
 
 	. "github.com/onsi/ginkgo"

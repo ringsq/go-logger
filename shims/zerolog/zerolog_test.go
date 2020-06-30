@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"math/rand"
 
-	log "github.com/AppsFlyer/go-logger"
+	log "github.com/magna5/go-logger"
 	"github.com/rs/zerolog"
 
 	"io"
