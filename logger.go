@@ -102,3 +102,18 @@ func Panicf(format string, args ...interface{}) {
 func WithFields(fields Fields) Logger {
 	return RootLogger.WithFields(fields)
 }
+
+// SetFlags to match standard logger
+func SetFlags(args ...interface{}) {}
+
+func Print(msg ...interface{}) {
+	RootLogger.Debug(msg)
+}
+
+func Println(msg ...interface{}) {
+	RootLogger.Debugln(msg)
+}
+
+func Printf(format string, args ...interface{}) {
+	RootLogger.Debugf(format, args)
+}
