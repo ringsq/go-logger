@@ -5,7 +5,7 @@ import (
 	stdlog "log"
 
 	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
+	"github.com/onsi/gomega"
 )
 
 var _ = Describe("simple logger", func() {
@@ -38,9 +38,9 @@ var _ = Describe("simple logger", func() {
 
 				b := newOut.Bytes()
 				newOut.Reset()
-				Expect(string(b)).To(SatisfyAll(
-					ContainSubstring("hi there"),
-					ContainSubstring(level),
+				gomega.Expect(string(b)).To(gomega.SatisfyAll(
+					gomega.ContainSubstring("hi there"),
+					gomega.ContainSubstring(level),
 				))
 			}
 		})
@@ -58,9 +58,9 @@ var _ = Describe("simple logger", func() {
 
 				b := newOut.Bytes()
 				newOut.Reset()
-				Expect(string(b)).To(SatisfyAll(
-					ContainSubstring("hi there"),
-					ContainSubstring(level),
+				gomega.Expect(string(b)).To(gomega.SatisfyAll(
+					gomega.ContainSubstring("hi there"),
+					gomega.ContainSubstring(level),
 				))
 			}
 		})
@@ -78,9 +78,9 @@ var _ = Describe("simple logger", func() {
 
 				b := newOut.Bytes()
 				newOut.Reset()
-				Expect(string(b)).To(SatisfyAll(
-					ContainSubstring("hi there"),
-					ContainSubstring(level),
+				gomega.Expect(string(b)).To(gomega.SatisfyAll(
+					gomega.ContainSubstring("hi there"),
+					gomega.ContainSubstring(level),
 				))
 			}
 		})
@@ -89,14 +89,14 @@ var _ = Describe("simple logger", func() {
 			l.Debug("hi there ", "you")
 
 			b := newOut.Bytes()
-			Expect(string(b)).To(ContainSubstring("[DEBUG] hi there you"))
+			gomega.Expect(string(b)).To(gomega.ContainSubstring("[DEBUG] hi there you"))
 		})
 
 		It("formatting", func() {
 			l.Debugf("hi there %s", "you")
 
 			b := newOut.Bytes()
-			Expect(string(b)).To(ContainSubstring("[DEBUG] hi there you"))
+			gomega.Expect(string(b)).To(gomega.ContainSubstring("[DEBUG] hi there you"))
 		})
 
 		Context("with fields", func() {
@@ -112,11 +112,11 @@ var _ = Describe("simple logger", func() {
 				}).Debug("hi there")
 
 				b := newOut.Bytes()
-				Expect(string(b)).To(SatisfyAll(
-					ContainSubstring("[DEBUG] hi there"),
-					ContainSubstring("foo=newval"),
-					ContainSubstring("baz=origval"),
-					ContainSubstring("biz=buzz"),
+				gomega.Expect(string(b)).To(gomega.SatisfyAll(
+					gomega.ContainSubstring("[DEBUG] hi there"),
+					gomega.ContainSubstring("foo=newval"),
+					gomega.ContainSubstring("baz=origval"),
+					gomega.ContainSubstring("biz=buzz"),
 				))
 
 			})
@@ -128,10 +128,10 @@ var _ = Describe("simple logger", func() {
 				}).Debug("hi there ", "you")
 
 				b := newOut.Bytes()
-				Expect(string(b)).To(SatisfyAll(
-					ContainSubstring("[DEBUG] hi there you"),
-					ContainSubstring("foo=bar"),
-					ContainSubstring("baz=2"),
+				gomega.Expect(string(b)).To(gomega.SatisfyAll(
+					gomega.ContainSubstring("[DEBUG] hi there you"),
+					gomega.ContainSubstring("foo=bar"),
+					gomega.ContainSubstring("baz=2"),
 				))
 
 				newOut.Reset()
@@ -144,14 +144,14 @@ var _ = Describe("simple logger", func() {
 				}).Debugf("hi there %s", "you")
 
 				bb := newOut.Bytes()
-				Expect(string(bb)).To(SatisfyAll(
-					ContainSubstring("[DEBUG] hi there you"),
-					ContainSubstring("biz=bar"),
-					ContainSubstring("buz=2"),
+				gomega.Expect(string(bb)).To(gomega.SatisfyAll(
+					gomega.ContainSubstring("[DEBUG] hi there you"),
+					gomega.ContainSubstring("biz=bar"),
+					gomega.ContainSubstring("buz=2"),
 				))
-				Expect(string(bb)).ToNot(SatisfyAll(
-					ContainSubstring("foo=bar"),
-					ContainSubstring("baz=2"),
+				gomega.Expect(string(bb)).ToNot(gomega.SatisfyAll(
+					gomega.ContainSubstring("foo=bar"),
+					gomega.ContainSubstring("baz=2"),
 				))
 			})
 		})
