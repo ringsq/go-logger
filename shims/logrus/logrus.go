@@ -9,7 +9,7 @@ type shim struct {
 	*logrus.Entry
 }
 
-// NewLogrus can be used to override the default logger.
+// New can be used to override the default logger.
 // Optionally pass in an existing logrus logger or pass in
 // `nil` to use the default logger.
 func New(logger *logrus.Logger) log.Logger {

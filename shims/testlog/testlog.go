@@ -19,7 +19,7 @@ type TestLogger struct {
 	fields map[string]interface{}
 }
 
-// NewTestLog generates a new TestLogger
+// New generates a new TestLogger
 func New() *TestLogger {
 	b := &bytes.Buffer{}
 
