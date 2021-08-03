@@ -1,4 +1,4 @@
-module github.com/magna5/go-logger
+module github.com/ringsq/go-logger
 
 go 1.12
 
