@@ -4,7 +4,8 @@ go 1.12
 
 require (
 	github.com/go-kit/kit v0.9.0
-	github.com/ringsq/go-logger v1.99.0
+	github.com/go-logfmt/logfmt v0.5.0 // indirect
+	github.com/go-stack/stack v1.8.0 // indirect
 	github.com/onsi/ginkgo v1.8.0
 	github.com/onsi/gomega v1.5.0
 	github.com/rs/zerolog v1.14.3
