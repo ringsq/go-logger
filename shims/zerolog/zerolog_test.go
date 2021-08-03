@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"math/rand"
 
-	log "github.com/magna5/go-logger"
+	log "github.com/ringsq/go-logger"
 	"github.com/rs/zerolog"
 
 	"io"

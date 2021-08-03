@@ -1,7 +1,7 @@
 package fake
 
 import (
-	"github.com/magna5/go-logger"
+	"github.com/ringsq/go-logger"
 	. "github.com/onsi/ginkgo"
 )
 

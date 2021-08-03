@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	log "github.com/magna5/go-logger"
+	log "github.com/ringsq/go-logger"
 	"github.com/rs/zerolog"
 )
 

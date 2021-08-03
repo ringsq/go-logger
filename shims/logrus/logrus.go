@@ -1,7 +1,7 @@
 package logrus
 
 import (
-	"github.com/magna5/go-logger"
+	"github.com/ringsq/go-logger"
 	"github.com/sirupsen/logrus"
 )
 

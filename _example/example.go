@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"time"
 
-	log "github.com/magna5/go-logger"
-	fake "github.com/magna5/go-logger/shims/_fake"
-	"github.com/magna5/go-logger/shims/logrus"
-	"github.com/magna5/go-logger/shims/kitlog"
-	"github.com/magna5/go-logger/shims/testlog"
-	"github.com/magna5/go-logger/shims/zerolog"
+	log "github.com/ringsq/go-logger"
+	fake "github.com/ringsq/go-logger/shims/_fake"
+	"github.com/ringsq/go-logger/shims/logrus"
+	"github.com/ringsq/go-logger/shims/kitlog"
+	"github.com/ringsq/go-logger/shims/testlog"
+	"github.com/ringsq/go-logger/shims/zerolog"
 )
 
 func main() {
