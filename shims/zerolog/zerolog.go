@@ -141,7 +141,9 @@ func (s *shim) Panicf(format string, args ...interface{}) {
 // zerolog logger, with the provided fields added to the log string,
 // as a key-value pair
 func (s *shim) WithFields(fields log.Fields) log.Logger {
-	lg := s.logger.With().Fields(fields).Logger()
+	var fieldMap map[string]interface{} // := make(map[string]interface{})
+	fieldMap = fields
+	lg := s.logger.With().Fields(fieldMap).Logger()
 	return &shim{
 		logger: &lg,
 	}
