@@ -9,92 +9,92 @@ func init() {
 
 // Debug log message
 func Debug(msg ...interface{}) {
-	RootLogger.Debug(msg)
+	RootLogger.Debug(msg...)
 }
 
 // Info log message
 func Info(msg ...interface{}) {
-	RootLogger.Info(msg)
+	RootLogger.Info(msg...)
 }
 
 // Warn log message
 func Warn(msg ...interface{}) {
-	RootLogger.Warn(msg)
+	RootLogger.Warn(msg...)
 }
 
 // Error log message
 func Error(msg ...interface{}) {
-	RootLogger.Error(msg)
+	RootLogger.Error(msg...)
 }
 
 // Fatal log message (and exit)
 func Fatal(msg ...interface{}) {
-	RootLogger.Fatal(msg)
+	RootLogger.Fatal(msg...)
 }
 
 // Panic log message (and exit)
 func Panic(msg ...interface{}) {
-	RootLogger.Panic(msg)
+	RootLogger.Panic(msg...)
 }
 
 // Debugln message with linefeed
 func Debugln(msg ...interface{}) {
-	RootLogger.Debugln(msg)
+	RootLogger.Debugln(msg...)
 }
 
 // Infoln message with linefeed
 func Infoln(msg ...interface{}) {
-	RootLogger.Infoln(msg)
+	RootLogger.Infoln(msg...)
 }
 
 // Warnln message with linefeed
 func Warnln(msg ...interface{}) {
-	RootLogger.Warnln(msg)
+	RootLogger.Warnln(msg...)
 }
 
 // Errorln message with linefeed
 func Errorln(msg ...interface{}) {
-	RootLogger.Errorln(msg)
+	RootLogger.Errorln(msg...)
 }
 
 // Fatalln log message (and exit)
 func Fatalln(msg ...interface{}) {
-	RootLogger.Fatalln(msg)
+	RootLogger.Fatalln(msg...)
 }
 
 // Panicln log message (and exit)
 func Panicln(msg ...interface{}) {
-	RootLogger.Panicln(msg)
+	RootLogger.Panicln(msg...)
 }
 
 // Debugf formatted message
 func Debugf(format string, args ...interface{}) {
-	RootLogger.Debugf(format, args)
+	RootLogger.Debugf(format, args...)
 }
 
 // Infof formatted message
 func Infof(format string, args ...interface{}) {
-	RootLogger.Infof(format, args)
+	RootLogger.Infof(format, args...)
 }
 
 // Warnf formatted message
 func Warnf(format string, args ...interface{}) {
-	RootLogger.Warnf(format, args)
+	RootLogger.Warnf(format, args...)
 }
 
 // Errorf formatted message
 func Errorf(format string, args ...interface{}) {
-	RootLogger.Errorf(format, args)
+	RootLogger.Errorf(format, args...)
 }
 
 // Fatalf log message (and exit)
 func Fatalf(format string, args ...interface{}) {
-	RootLogger.Fatalf(format, args)
+	RootLogger.Fatalf(format, args...)
 }
 
 // Panicf formatted panic message
 func Panicf(format string, args ...interface{}) {
-	RootLogger.Fatalf(format, args)
+	RootLogger.Fatalf(format, args...)
 }
 
 // WithFields will return a new logger based on the original logger
@@ -107,13 +107,13 @@ func WithFields(fields Fields) Logger {
 func SetFlags(args ...interface{}) {}
 
 func Print(msg ...interface{}) {
-	RootLogger.Debug(msg)
+	RootLogger.Debug(msg...)
 }
 
 func Println(msg ...interface{}) {
-	RootLogger.Debugln(msg)
+	RootLogger.Debugln(msg...)
 }
 
 func Printf(format string, args ...interface{}) {
-	RootLogger.Debugf(format, args)
+	RootLogger.Debugf(format, args...)
 }
